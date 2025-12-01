@@ -9,7 +9,7 @@ nav {
     position: fixed;
 	top: 20px;
 	left: 50px;
-    width: 40%;                    /* full width on phones */
+    width: 100%;                    /* full width on phones */
     background-color: maroon;
     padding: 12px 20;
     z-index: 1000;
@@ -144,6 +144,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
