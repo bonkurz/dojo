@@ -124,6 +124,10 @@ img:active {
     transition: transform 0.3s;
 }
 
+.display, .bpic {
+	width: 30%;
+}
+
 #SunTzu{
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -145,6 +149,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
