@@ -126,10 +126,12 @@ img:active {
 
 .display {
 	width: 30%;
+	height: 30%;
 }
 
 .bpic {
 	width: 30%;
+	height: 30%;
 }
 
 #SunTzu{
@@ -152,6 +154,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
