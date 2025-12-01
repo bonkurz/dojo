@@ -4,36 +4,57 @@ body {
     padding: 0;
 }
 
+/* === FIXED & RESPONSIVE NAVIGATION === */
 nav {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;                    /* full width on phones */
     background-color: maroon;
-    padding: 10px 0;
-    z-index: 100;
-    width: 40%;
-    margin: 30px 300px 50px 400px;
+    padding: 12px 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    list-style: none;               /* good practice */
 }
 
 nav li {
     display: inline-block;
-    margin: 7px 15px;
+    margin: 7px 12px;
 }
+
 nav a {
-    font-size: 32px;
+    font-size: 20px;                /* readable on mobile */
     text-decoration: none;
     color: lightgrey;
     font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: yellow;
 }
 
+/* === Desktop / Tablet styling (optional but recommended) === */
+@media (min-width: 768px) {
+    nav {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;             /* centers the centering you originally wanted */
+        border-radius: 0 0 12px 12px;
+    }
+    
+    nav a {
+        font-size: 28px;            /* bigger text on larger screens */
+    }
+}
 a {
     text-decoration: none;
 }
@@ -121,4 +142,5 @@ img:active {
 
 .dojo-names {
     text-decoration: none;
+
 }
