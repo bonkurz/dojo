@@ -1,170 +1,126 @@
+/* ==== MAKE EVERYTHING LOOK IDENTICAL ON MOBILE & DESKTOP ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: lightgrey;
-    margin: 0;
-    padding: 0;
+  background-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 90px;               /* space for the fixed nav */
 }
 
-/* === FIXED & RESPONSIVE NAVIGATION === */
+/* Force the page to act like a 1000px-wide desktop on ALL devices */
+@media screen and (max-width: 1200px) {
+  body {
+    width: 1000px;                 /* fake desktop width */
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
+/* ==== FIXED NAVIGATION – looks the same everywhere ==== */
 nav {
-    position: fixed;
-	top: 10px;
-	left: 10px;
-    width: 100%;                    /* full width on phones */
-    background-color: maroon;
-    padding: 12px 20px;
-    z-index: 1000;
-    text-align: center;
-	border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;               /* good practice */
-}
-
-nav li {
-    display: inline-block;
-    margin: 7px 12px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);     /* perfect centering on every screen */
+  width: 80%;
+  max-width: 1000px;
+  background-color: maroon;
+  padding: 12px 20px;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 nav a {
-    font-size: 20px;                /* readable on mobile */
-    text-decoration: none;
-    color: lightgrey;
-    font-weight: bold;
-    padding: 8px 12px;
-    display: inline-block;
-    transition: color 0.3s;
+  font-size: 28px;                 /* always big, exactly like desktop */
+  color: lightgrey;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: yellow;
+  color: yellow;
 }
 
-/* === Desktop / Tablet styling (optional but recommended) === */
-@media (min-width: 768px) {
-    nav {
-        width: 80%;
-        max-width: 1000px;
-        margin: 10 auto;             /* centers the centering you originally wanted */
-        border-radius: 20px;
-    }
-    
-    nav a {
-        font-size: 28px;            /* bigger text on larger screens */
-    }
+/* ==== TYPOGRAPHY & LAYOUT – identical on every device ==== */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-shadow: 2px 2px 3px #aaa;
 }
-a {
-    text-decoration: none;
-}
+
+h1 { font-size: 48px; color: maroon; text-shadow: 3px 3px 2px #aaa; }
+h2 { font-size: 36px; text-decoration: underline; }
+h3 { font-size: 28px; }
 
 p {
-    font-size: 24px;
-    text-align: justify;
-    margin: 20px;
+  font-size: 24px;
+  text-align: justify;
+  margin: 20px;
 }
 
 div {
-    text-align: center;
-    margin: 30px 0px;
+  text-align: center;
+  margin: 30px 0;
 }
 
-.div-par {
-    padding: 20px;
-}
+.div-par { padding: 20px; }
 
-.dojodivp {
-    display: flex;
-    justify-content: center;
-}
+.dojodivp { display: flex; justify-content: center; }
 
 .dojodiv {
-    width: 10%;
-    padding: 5px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    flex-direction: row;
-    border-radius: 20px;
+  width: 10%;
+  padding: 5px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
 }
 
 .dojodiv h2 {
-    text-align: center;
-    font-size: 20px;
+  font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    text-shadow: 2px 2px 3px #aaa;
-}
-
-h1 {
-    font-size: 48px;
-    color: maroon;
-    text-shadow: 3px 3px 2px #aaa;
-}
-
-h2 {
-    font-size: 36px;
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 28px;
-}
-
+/* ==== IMAGES – never shrink or stretch ==== */
 img {
-    border-radius: 30px;
-    margin: 10px;
+  width: auto;                     /* keeps original size */
+  max-width: 100%;                 /* but never overflows */
+  height: auto;
+  border-radius: 30px;
+  margin: 10px;
 }
 
 img:active {
-    transform: translateY(-10px);
-    transition: transform 0.3s;
+  transform: translateY(-10px);
+  transition: transform 0.3s;
 }
 
-#SunTzu{
-	padding-top: 30px;
-	padding-bottom: 30px;
-    text-align: center;
+/* ==== MOTTO BOX ==== */
+.motto {
+  background-color: maroon;
+  color: lightgrey;
+  border-radius: 30px;
+  width: 85%;
+  max-width: 900px;
+  height: 80px;
+  line-height: 80px;               /* vertically centers text */
+  text-align: center;
+  margin: 30px auto;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.motto{
-	background-color: maroon;
-	color: lightgrey;
-	border-radius: 30px;
-	width: 85%;
-	height: 80px;
-	text-align: center;
-	padding: justify;
-    margin: auto;
+#SunTzu {
+  padding: 30px 0;
+  text-align: center;
 }
 
-.dojo-names {
-    text-decoration: none;
+a, .dojo-names {
+  text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
