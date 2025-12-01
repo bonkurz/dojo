@@ -47,7 +47,7 @@ nav a:hover {
     nav {
         width: 80%;
         max-width: 1000px;
-        margin: 0 auto;             /* centers the centering you originally wanted */
+        margin: 10 auto;             /* centers the centering you originally wanted */
         border-radius: 0 0 12px 12px;
     }
     
@@ -144,6 +144,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
