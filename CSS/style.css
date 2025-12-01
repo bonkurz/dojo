@@ -11,6 +11,7 @@ nav {
     left: 0;
     width: 100%;                    /* full width on phones */
     background-color: maroon;
+	margin: 20px 30px;
     padding: 12px 0;
     z-index: 1000;
     text-align: center;
@@ -18,8 +19,8 @@ nav {
 }
 
 nav ul {
-    margin: 10px 20px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     list-style: none;               /* good practice */
 }
 
@@ -144,4 +145,5 @@ img:active {
     text-decoration: none;
 
 }
+
 
