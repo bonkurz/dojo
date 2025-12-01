@@ -7,8 +7,6 @@ body {
 /* === FIXED & RESPONSIVE NAVIGATION === */
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 40%;                    /* full width on phones */
     background-color: maroon;
 	margin: 40px 230px 50px 230px;
@@ -145,6 +143,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
