@@ -120,13 +120,14 @@ img:active {
     text-align: center;
     margin: 30px auto;          /* keeps it centered */
     padding: 0;                 /* ← THIS is the fix you asked for */
-    font-size: 28px;            /* optional but makes the quote fill the box nicely */
+    font-size: 20px;            /* optional but makes the quote fill the box nicely */
     font-weight: bold;
 }
 
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
