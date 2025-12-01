@@ -114,20 +114,24 @@ img:active {
     color: lightgrey;
     border-radius: 30px;
     width: 85%;
-    max-width: 900px;           /* prevents it from getting too wide on big screens */
-    height: 60px;               /* you already had this */
-    line-height: 60px;          /* vertically centers the text perfectly */
+    max-width: 900px;
+    height: 80px;
+    margin: 30px auto;
+    padding: 0;
+    
+    /* Magic part – text fits perfectly on every screen */
+    display: flex;
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
     text-align: center;
-    margin: 30px auto;          /* keeps it centered */
-    padding: 0;                 /* ← THIS is the fix you asked for */
-    font-size: 20px;            /* optional but makes the quote fill the box nicely */
+    
     font-weight: bold;
+    font-size: 28px;            /* normal size on desktop */
+    
+    /* This makes the text shrink automatically when it would overflow */
+    font-size: clamp(16px, 4.5vw, 28px);   /* ← the key line */
+    line-height: 1.2;           /* normal line height, not fixed 80px anymore */
 }
-
 .dojo-names {
     text-decoration: none;
 }
-
-
-
-
