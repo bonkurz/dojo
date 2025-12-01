@@ -11,7 +11,7 @@ nav {
     left: 0;
     width: 40%;                    /* full width on phones */
     background-color: maroon;
-	margin: 20px 30px 20px 50px;
+	margin: 40px 230px 50px 230px;
     padding: 12px 20;
     z-index: 1000;
     text-align: center;
@@ -145,6 +145,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
