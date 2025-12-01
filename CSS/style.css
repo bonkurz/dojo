@@ -109,12 +109,6 @@ img:active {
     transition: transform 0.3s;
 }
 
-#SunTzu{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
 .motto {
     background-color: maroon;
     color: lightgrey;
@@ -133,4 +127,5 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
