@@ -18,8 +18,8 @@ nav {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+    margin: 10px 20px;
+    padding: 10px;
     list-style: none;               /* good practice */
 }
 
@@ -144,3 +144,4 @@ img:active {
     text-decoration: none;
 
 }
+
