@@ -11,7 +11,7 @@ nav {
 	left: 10px;
     width: 100%;                    /* full width on phones */
     background-color: maroon;
-    padding: 12px 20;
+    padding: 12px 20px;
     z-index: 1000;
     text-align: center;
 	border-radius: 20px;
@@ -144,6 +144,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
