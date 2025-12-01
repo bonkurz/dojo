@@ -115,17 +115,22 @@ img:active {
     text-align: center;
 }
 
-.motto{
+.motto {
     background-color: maroon;
     color: lightgrey;
     border-radius: 30px;
     width: 85%;
-    height: 80px;
-    line-height: 80px;               /* ← fixes vertical centering of the text */
+    max-width: 900px;           /* prevents it from getting too wide on big screens */
+    height: 80px;               /* you already had this */
+    line-height: 80px;          /* vertically centers the text perfectly */
     text-align: center;
-    margin: 30px auto;               /* ← better than just "auto" */
+    margin: 30px auto;          /* keeps it centered */
+    padding: 0;                 /* ← THIS is the fix you asked for */
+    font-size: 28px;            /* optional but makes the quote fill the box nicely */
+    font-weight: bold;
 }
 
 .dojo-names {
     text-decoration: none;
 }
+
