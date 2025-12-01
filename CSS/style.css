@@ -124,6 +124,10 @@ img:active {
     transition: transform 0.3s;
 }
 
+.diary {
+	width: 90%;
+}
+
 .display {
 	width: 30%;
 }
@@ -151,7 +155,6 @@ img:active {
 
 .dojo-names {
     text-decoration: none;
-
 }
 
 
