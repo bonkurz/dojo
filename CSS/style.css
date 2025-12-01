@@ -10,7 +10,6 @@ nav {
 	top: 10px;
 	left: 10px;
 	right: 10px;
-	bottom: 10px;
     width: 100%;                    /* full width on phones */
     background-color: maroon;
     padding: 12px 20;
@@ -146,6 +145,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
