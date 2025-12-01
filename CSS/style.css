@@ -9,9 +9,9 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;                    /* full width on phones */
+    width: 40%;                    /* full width on phones */
     background-color: maroon;
-	margin: 20px 30px;
+	margin: 20px 30px 20px 50px;
     padding: 12px 0;
     z-index: 1000;
     text-align: center;
@@ -145,5 +145,6 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
