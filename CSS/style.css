@@ -90,7 +90,7 @@ div { text-align: center; margin: 30px 0px; }
     border-radius: 50%;
 }
 
-.dojodiv {
+.dojodiv-img {
     width: 100%; 
     height: auto; 
     border-radius: 50%; 
@@ -146,4 +146,5 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
