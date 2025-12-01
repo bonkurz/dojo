@@ -115,8 +115,8 @@ img:active {
     border-radius: 30px;
     width: 85%;
     max-width: 900px;           /* prevents it from getting too wide on big screens */
-    height: 80px;               /* you already had this */
-    line-height: 80px;          /* vertically centers the text perfectly */
+    height: 60px;               /* you already had this */
+    line-height: 60px;          /* vertically centers the text perfectly */
     text-align: center;
     margin: 30px auto;          /* keeps it centered */
     padding: 0;                 /* ← THIS is the fix you asked for */
@@ -127,5 +127,6 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
