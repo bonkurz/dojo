@@ -124,7 +124,11 @@ img:active {
     transition: transform 0.3s;
 }
 
-.display, .bpic {
+.display {
+	width: 30%;
+}
+
+.bpic {
 	width: 30%;
 }
 
@@ -149,6 +153,7 @@ img:active {
     text-decoration: none;
 
 }
+
 
 
 
