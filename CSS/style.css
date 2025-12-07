@@ -5,9 +5,9 @@
 
 body {
     background-color: lightgrey;
-    margin: 0;
-    padding: 0;
-    padding-top: 90px;               /* ← makes room for the fixed nav */
+    margin: 50px;
+    padding: 50px;
+    padding-top: 10px;               /* ← makes room for the fixed nav */
 }
 
 /* === FIXED & RESPONSIVE NAVIGATION === */
@@ -83,24 +83,23 @@ div {
     margin: 30px 0px; 
 }
 
-.div-par { 
-    padding: 20px; 
-}
-
 .dojodiv {display: flex; 
           width: 90%; 
           justify-content: center; 
-          padding: 10px; 
-          margin: 10px; 
+          padding: 10px;
 }
 
-.dojodiv-img {
-    display: inline;
-    width: 30%; 
+.dojodiv-img { 
+    display: block;
+    width: 80%; 
     height: auto; 
     margin: 10px;
-    border-radius: 50%; 
-    border: 2px solid maroon; 
+    border-radius: 50%;  
+}
+
+.dojodiv-img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
 }
 
 .dojodiv h2 { text-align: center; 
@@ -120,10 +119,17 @@ img {
     border-radius: 30px;
     margin: 10px;
     display: inline;
+    border: 3px solid white;
+    box-shadow: 4px 4px 16px rgb(255, 255, 255);
 }
 
 img:active {
     transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
     transition: transform 0.3s;
 }
 
@@ -153,15 +159,4 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
