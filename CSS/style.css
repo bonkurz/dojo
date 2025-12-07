@@ -96,6 +96,7 @@ div {
 }
 
 .dojodiv-img {
+    display: inline;
     width: 30%; 
     height: auto; 
     margin: 10px;
@@ -154,6 +155,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
