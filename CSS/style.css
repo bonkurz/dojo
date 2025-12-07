@@ -100,6 +100,8 @@ div {
 .dojodiv-img:hover {
     transform: scale(1.5);
     transition: transform 0.3s;
+    border: 2px solid white;
+    box-shadow: 8px 8px 36px rgb(255, 255, 255);
 }
 
 .dojodiv h2 { text-align: center; 
@@ -119,7 +121,7 @@ img {
     border-radius: 30px;
     margin: 10px;
     display: inline;
-    border: 3px solid white;
+    border: 4px solid white;
     box-shadow: 4px 4px 16px rgb(255, 255, 255);
 }
 
@@ -129,9 +131,12 @@ img:active {
 }
 
 img:hover {
-    transform: scale(1.05);
     transition: transform 0.3s;
-    border: 1.5px solid white;
+    box-shadow: 8px 8px 36px rgb(255, 255, 255);
+}
+
+.img-link:hover {
+    border: 4px solid yellow;
 }
 
 .motto {
@@ -160,6 +165,4 @@ img:hover {
 .dojo-names {
     text-decoration: none;
 }
-
-
 
