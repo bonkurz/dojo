@@ -4,7 +4,7 @@
 /* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
 
 body {
-    background-color: white;
+    background-color: lightgrey;
     margin: 50px;
     padding: 50px;
     padding-top: 10px;               /* ← makes room for the fixed nav */
@@ -160,5 +160,6 @@ img:hover {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
