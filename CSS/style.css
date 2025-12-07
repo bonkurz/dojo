@@ -4,7 +4,7 @@
 /* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
 
 body {
-    background-color: lightgrey;
+    background-color: rgb(204, 197, 196);
     margin: 50px;
     padding: 50px;
     padding-top: 10px;               /* ← makes room for the fixed nav */
@@ -98,7 +98,7 @@ div {
 }
 
 .dojodiv-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: transform 0.3s;
 }
 
@@ -131,6 +131,7 @@ img:active {
 img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+    border: 1.5px solid white;
 }
 
 .motto {
