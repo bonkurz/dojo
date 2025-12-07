@@ -85,24 +85,19 @@ div {
     padding: 20px; 
 }
 
-.dojodivp { display: flex; 
-           width: 100%; 
-           justify-content: center; 
-}
-
-.dojodiv {
-    width: 12%;
-    padding: 0px;
-    margin: 5px;
-    flex-direction: row;
-    border-radius: 50%;
+.dojodiv {display: flex; 
+          width: 100%; 
+          justify-content: center; 
+          padding: 0px; 
+          margin: 5px; 
 }
 
 .dojodiv-img {
-    width: 100%; 
+    width: 12%; 
     height: auto; 
     border-radius: 50%; 
     border: 2px solid maroon; 
+    flex-direction: row; 
 }
 
 .dojodiv h2 { text-align: center; 
@@ -155,6 +150,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
