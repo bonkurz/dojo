@@ -101,7 +101,6 @@ div {
     margin: 10px;
     border-radius: 50%; 
     border: 2px solid maroon; 
-    flex-direction: row; 
 }
 
 .dojodiv h2 { text-align: center; 
@@ -154,6 +153,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
