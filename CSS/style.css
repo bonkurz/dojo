@@ -88,7 +88,6 @@ div {
 }
 
 .dojodiv {display: flex; 
-          flex-direction: row; 
           width: 90%; 
           justify-content: center; 
           padding: 10px; 
@@ -155,6 +154,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
