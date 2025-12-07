@@ -71,9 +71,11 @@ a {
 }
 
 p {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 1.6; 
     text-align: justify;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px; 
 }
 
 div { 
@@ -151,6 +153,7 @@ img:active {
 .dojo-names {
     text-decoration: none;
 }
+
 
 
 
