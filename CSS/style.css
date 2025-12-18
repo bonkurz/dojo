@@ -1,22 +1,18 @@
-/* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
-/*  YOUR ORIGINAL STYLE – 100% UNCHANGED VISUALLY   */
-/*  Only 3 lines added/changed for mobile phones    */
-/* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
-
+/* === GLOBAL STYLES === */ 
 body {
     background-color: lightgrey;
-    margin: 50px;
-    padding: 50px;
+    margin: 30px;
+    padding: 30px;
     padding-top: 10px;               /* ← makes room for the fixed nav */
 }
 
 /* === FIXED & RESPONSIVE NAVIGATION === */
 nav {
     position: fixed;
-    top: 10px;
+    top: 20px;
     left: 50%;                       /* ← changed from left:10px */
     transform: translateX(-50%);     /* ← NEW: perfect centering on every device */
-    width: 100%;                     /* full width on phones */
+    width: 80%;                     /* full width on phones */
     max-width: 1000px;               /* ← NEW: prevents it becoming too wide on huge screens */
     background-color: maroon;
     padding: 12px 20px;
@@ -51,6 +47,11 @@ nav a:hover {
     color: yellow;
 }
 
+nav a:active {
+    transform: translateY(4px);
+    transition: transform 0.1s;
+}
+
 /* Desktop behaviour – exactly like you already had */
 @media (min-width: 768px) {
     nav {
@@ -70,12 +71,21 @@ a {
     text-decoration: none; 
 }
 
+#dojoImage {
+    width: 60%;
+}
+
 p {
-    font-size: 16px;
+    font-size: 20px;
+    width: 85%;
     line-height: 1.6; 
     text-align: justify;
     margin: 20px auto;
-    max-width: 800px; 
+}
+
+#SunTzu {
+    font-size: auto;
+    text-align: center;
 }
 
 div { 
@@ -90,18 +100,18 @@ div {
 }
 
 .dojodiv-img { 
-    display: block;
-    width: 80%; 
-    height: auto; 
-    margin: 10px;
-    border-radius: 50%;  
+    display: block; 
+    width: 27%; 
+    margin: 10px; 
+    border-radius: 50%; 
+    transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
 }
 
 .dojodiv-img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: transform 0.3s;
     border: 2px solid white;
-    box-shadow: 8px 8px 36px rgb(255, 255, 255);
+    box-shadow: 0 0 20px white;
 }
 
 .dojodiv h2 { text-align: center; 
@@ -123,6 +133,7 @@ img {
     display: inline;
     border: 4px solid white;
     box-shadow: 4px 4px 16px rgb(255, 255, 255);
+    transition: border-color 2s ease, box-shadow 0.3s ease;
 }
 
 img:active {
@@ -132,11 +143,16 @@ img:active {
 
 img:hover {
     transition: transform 0.3s;
-    box-shadow: 8px 8px 36px rgb(255, 255, 255);
+    box-shadow: 0 0 100px rgb(255, 255, 255);
+}
+
+.img-link {
+    width: 20%;
 }
 
 .img-link:hover {
     border: 4px solid yellow;
+    box-shadow: 0 0 20px yellow;
 }
 
 .motto {
@@ -166,3 +182,6 @@ img:hover {
     text-decoration: none;
 }
 
+.display {
+    width: 30%;
+}
