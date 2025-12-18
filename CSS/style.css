@@ -1,8 +1,8 @@
 /* === GLOBAL STYLES === */ 
 body {
     background-color: lightgrey;
-    margin: 30px;
-    padding: 30px;
+    margin: auto;
+    padding: auto;
     padding-top: 10px;               /* ← makes room for the fixed nav */
 }
 
@@ -15,7 +15,7 @@ nav {
     width: 80%;                     /* full width on phones */
     max-width: 1000px;               /* ← NEW: prevents it becoming too wide on huge screens */
     background-color: maroon;
-    padding: 12px 20px;
+    padding: auto;
     z-index: 1000;
     text-align: center;
     border-radius: 20px;
@@ -34,11 +34,11 @@ nav li {
 }
 
 nav a {
-    font-size: 20px;
+    font-size: auto;
     text-decoration: none;
     color: lightgrey;
     font-weight: bold;
-    padding: 8px 12px;
+    padding: auto;
     display: inline-block;
     transition: color 0.3s;
 }
@@ -80,7 +80,7 @@ p {
     width: 85%;
     line-height: 1.6; 
     text-align: justify;
-    margin: 20px auto;
+    margin: 0;
 }
 
 #SunTzu {
